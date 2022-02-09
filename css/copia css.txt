@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+/*Barra de navegación
 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    /*Da un margen entre la barra de navegación
+    y la página web
+    margin-right: 10px;
+    margin-left: 10px;
+}*/
+#menu{
     background-image: url(../Imagenes/Mesa\ de\ trabajo\ 1.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -15,10 +26,6 @@ nav{
     margin-left: auto;
     margin-right:auto;
   }
-
-.icono {
-    padding-left: 20px;
-}
 
 
 #nav-1{
@@ -43,21 +50,16 @@ nav{
 
 
 /*Parte central de la página*/
-
 #main-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Imagenes/historia2.PNG);
-    background-repeat: no-repeat;
-    background-position: initial;
-    background-size: cover;
+    background-color: grey;
     color: lavender;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /*Temporal*/
     height: 200px;
-    text-align: center;
 }
-
 
 #Title{
     display: flex;
@@ -95,34 +97,29 @@ nav{
 }
 
 #main-3-R{
-    color: aliceblue;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 25px;
 }
 #Resumen{
-    background-color: rgb(33, 37, 41);
     display: flex;
     width: 1000px;
-    height: 150px;
+    padding: 10px;
 }
 #Imagen-R{
     display: flex;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 150px;
+    height: 100px;
 }
 #Texto-R{
     display: flex;
-    flex-grow: 1;
+    flex-grow: 2;
     justify-content: center;
     flex-direction: column;
 }
-
-
 
 #main-4-Integrantes{
     display: flex;
