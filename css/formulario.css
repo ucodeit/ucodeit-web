@@ -114,8 +114,23 @@ nav{
 
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 120px;
 }
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes{
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+
+
 
