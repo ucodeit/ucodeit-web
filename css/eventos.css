@@ -1,0 +1,51 @@
+#main-event{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Imagenes/TalentL.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+    color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+}
+.elem-event{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.elem-event>p{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 2%;
+    text-align: center;
+}
+#agenda{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+    width: 40%;
+}
+#agenda>div{
+    padding: 10px;
+    display: flex;
+}
+#agenda>div>*{
+    padding: 10px;
+}
+#ubic-elem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#ubic-elem>div{
+    padding: 15%;
+}
