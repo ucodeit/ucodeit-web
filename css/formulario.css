@@ -5,21 +5,6 @@
 }
 
 /*Barra de navegación*/
-nav{
-    background-image: url(../Imagenes/Mesa\ de\ trabajo\ 1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.navbar-nav > li{
-    align-items: center;
-    margin-left: auto;
-    margin-right:auto;
-  }
-
-.icono {
-    padding-left: 20px;
-}
 
 .container {
     max-width: 800px;
@@ -109,26 +94,6 @@ nav{
     justify-content: left;
     margin-bottom: 20px;
     padding-left: 5px;
-}
-
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-}
-
-.social{
-    display: flex;
-    flex-direction: row;
-}
-
-.redes{
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
 }
 
 
