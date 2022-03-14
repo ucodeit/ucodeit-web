@@ -58,19 +58,19 @@
             <!-- Para hacer pruebas de tus funciones de submit debes de establecer onsubmit="return false" o
             la pagina se recargara automaticamente tras acabar de realizar la función. una vez que termines de
           hacer pruebas puedes borrar esta propiedad para que continue el metodo-->
-            <form action="#" id="formPostulantes" method="POST" onsubmit="return false">
+            <form action="#" id="formPostulantes" method="POST">
               <div class="fields">
                   <div>
                     <label for="name" class="form-label">Nombre</label>
-                    <input class="form-control form-control-sg" id="nombre" type="text" ><!-- poner required -->
+                    <input type="text" class="form-control form-control-sg" id="nombre"  required>
                   </div>
                   <div>
                     <label for="phoneNumber" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control form-control-sg" id="telefono" ><!-- poner required -->
+                    <input type="text" class="form-control form-control-sg" id="telefono" requiered>
                   </div>
                   <div>
                     <label for="mail" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control form-control-sg" id="mail" placeholder="name@example.com" ><!-- poner required -->
+                    <input type="email" class="form-control form-control-sg" id="mail" placeholder="name@example.com" required>
                   </div>
                   <div>
                     <label for="career" class="form-label">Carrera</label>
@@ -98,11 +98,11 @@
               <div class="areaText">
                 <div>
                   <label for="skills" class="form-label">Cuentanos tus habilidades</label>
-                  <textarea class="form-control" id="skills" rows="3" ></textarea><!-- poner required -->
+                  <textarea class="form-control" id="skills" rows="3" requied></textarea>
                 </div>
                 <div>
                   <label for="aboutyou" class="form-label">Cuentanos un poco de ti</label>
-                  <textarea class="form-control" id="aboutYou" rows="3" ></textarea><!-- poner required -->
+                  <textarea class="form-control" id="aboutYou" rows="3" required></textarea>
                 </div>
                 
                 <input type="submit" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
