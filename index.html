@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
       <!--CSS Bootstrap-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
       <!--Hoja de estilos-->
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="./css/index.css">
@@ -104,6 +105,108 @@
                 <h5 class="card-title">Photoshop</h5>
                 <p class="card-text">Adobe Photoshop es un editor de fotografías desarrollado por Adobe Systems Incorporated. Usado principalmente para el retoque de fotografías y gráficos, su nombre en español significa "taller de fotos". Es conocido mundialmente.​</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                <!-- Boton Modal Photoshop -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch demo modal
+                </button>
+
+                <!-- Modal-->
+                <div class="modal fade modal-ps col-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="margin: 5px 20px 5px 20px;">
+                        <div class="row mb-4">
+                          <div class="col-5 offset-1">
+                            <div class="row row-cols-2">
+                              <div class="col-3 fw-bold" style="color:#A5AEB7;">Inicio:</div>
+                              <div class="col-9 fw-bold" style="color: #274D64">2019</div>
+                              <div class="col-3 fw-bold" style="color:#A5AEB7;">Fin:</div>
+                              <div class="col-9 fw-bold" style="color: #274D64">En Proceso</div>
+                              <br><br>
+                              <div class="col-12">
+                                <h3 id="modal-subtitulo">Videojuego</h3>
+                                <p id="modal-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, nemo? Incidunt id delectus suscipit adipisci nostrum, quos quas quis enim non dolorum repudiandae dolores facilis pariatur aliquam eos magnam sunt!</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-5">
+                            <div class="card">
+                              <div class="card-header">Demo</div>
+                              <img src="Imagenes/Lab/cap_3.png" class="card-img-top" alt="">
+                              <div class="card-body">
+                                <p class="card-text"></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12"  id="modal-decoration">
+                            <h3 class="text-center">Etapas del Proyecto</h3>
+                          </div>
+                          <div class="col-4">
+                            <div class="col-12 align-middle">
+                              <span class="text-center" id="modal-icon-decoration">
+                                <h2><i class="bi bi-lightbulb"></i></h2>
+                              </span>
+                            </div>
+                            <div class="col-12 text-center">
+                              <h3>Etapa 1</h3>
+                            </div>
+                            <div class="col-12 text-center justify-content-center">
+                              <p id="modal-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, blanditiis ab dolore necessitatibus alias doloremque vitae repudiandae ratione eos, distinctio quam minima deserunt eius. Molestias perspiciatis quam placeat omnis quos?</p>
+                            </div>
+
+                            
+                            </div>
+                            <div class="col-4">
+                              <div class="col-12 align-middle">
+                                <span class="text-center" id="modal-icon-decoration">
+                                  <h2><i class="bi bi-lightbulb"></i></h2>
+                                </span>
+                              </div>
+                              <div class="col-12 text-center">
+                                <h3>Etapa 2</h3>
+                              </div>
+                              <div class="col-12 text-center justify-content-center">
+                                <p id="modal-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti autem hic, dolor ipsum assumenda et molestias facere minus doloribus, impedit ab ipsa quasi non fugit dolores nostrum reprehenderit neque rem!</p>
+                              </div>
+
+                            </div>
+                            <div class="col-4">
+                              <div class="col-12 align-middle">
+                                <span class="text-center" id="modal-icon-decoration">
+                                  <h2><i class="bi bi-lightbulb"></i></h2>
+                                </span>
+                              </div>
+                              <div class="col-12 text-center">
+                                <h3>Etapa 3</h3>
+                              </div>
+                              <div class="col-12 text-center justify-content-center">
+                                <p id="modal-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, optio hic. Architecto nostrum totam, obcaecati ipsam ab aspernatur voluptate est praesentium atque perspiciatis suscipit eligendi iusto beatae sed iure voluptatum.</p>
+                              </div>
+                            </div>
+  
+                          </div>
+                          <div class="row justify-content-md-center" id="modal-decoration">
+                            <div class="col-5 text-center">
+                              <h4>¿Te gustó el Proyecto?</h4>
+                              <button type="button" class="btn btn-secondary col-6 mt-3 fw-bold" data-bs-dismiss="modal" style="font-size: 18px;">¡Únete!</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  <!-- Fin Modal -->
+
+                </div>
               </div>
             </div>
           </div>
