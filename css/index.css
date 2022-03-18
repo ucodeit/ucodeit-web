@@ -72,14 +72,58 @@ nav{
     gap: 20px;
     padding: 10px;;
 }
+@media screen and (max-width: 920px){
+    .mycolumn{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .myspace{
+        width: 90% !important;
+    }
 
-.info{
-    width: 15rem;
-    margin: 10px;
-    padding-left: 0% !important;
-    padding-right: 0% !important;
+    .myspaceImg{
+        width: 90% !important;
+        /*margin-left: 8.333%;*/
+
+    }
 }
 
+.modal-ps{
+    color:black;
+}
+#modal-subtitulo{
+    color: #000000;
+}
+#modal-texto{
+    color: #808080;
+    font-size: 13px;
+}
+#modal-decoration{
+    border-top: 1px solid #dee2e6;
+    padding-top: 25px;
+}
+.bi-lightbulb{
+    background-color: #b9b9b9;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 5px 16px 16px 16px;
+}
+
+.myButtom{
+    text-decoration: none;
+}
+.myButtom:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.lab{
+    box-shadow: 0px 0px 5px 1px black !important;
+}
 
 #Integrante{
     display: flex;

@@ -1,16 +1,3 @@
-.TituloBackground{
-    background-image: url(../Imagenes/bannerUpiicsa.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0 50px 0;
-}
-
 .Titulo{
     display: flex;
     flex-direction: column;
@@ -60,14 +47,6 @@
 
 }
 
-
-#txt1{
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .liner{
 	height: 2px;
     justify-content: space-around;
@@ -108,3 +87,65 @@
     margin: 0px;
     border-radius: 10px;
 }
+
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px 20px 5px;
+}
+
+summary {
+    border: 4px solid transparent;
+    outline: none;
+    padding: 1rem;
+    display: block;
+    background: #3659f3;
+    color: white;
+    max-width: 470px;
+    width: 100%;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+
+
+  details {
+    width: 100%;
+    max-width: 470px;
+    box-sizing: border-box;
+    margin: 5px;
+    background: white;
+  }
+
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+
+  summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+  }
+  
+  .content {
+    border-top: none;
+    padding: 10px;
+    border: 2px solid #3659f3;
+    border-top: none;
+  }
+  

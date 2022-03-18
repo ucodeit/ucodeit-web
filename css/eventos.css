@@ -11,6 +11,22 @@
     height: 200px;
     text-align: center;
 }
+
+.collage{
+    margin: 0px 10px 25px !important;
+    border-radius: 15px;
+}
+
+.collage > div{
+    margin: 8px 0px !important; 
+    padding: 0px 6px;
+}
+
+.collage > div > img{
+    box-shadow: 0px 0px 3px 1px black !important;
+    border-radius: 15px;
+}
+
 .elem-event{
     align-items: center;
     justify-content: center;
@@ -29,23 +45,91 @@
     justify-content: center;
     display: flex; 
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
-#agenda>div{
-    padding: 10px;
+
+.evento{
     display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 2;
+    
 }
-#agenda>div>*{
-    padding: 10px;
+
+.hora{
+    background-color: #0275d8;
+    color: antiquewhite;
+    border-radius: 15px;
+    padding: 0px 10px;
+    height: 25px;
+    font-weight: bold;
+    align-items: center;
+
 }
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.datos > p{
+    margin: 0%;
+}
+
+#liner{
+	width: 2px;
+    justify-content: space-around;
+	background: #0275d8;
+	position: absolute;
+	z-index: 1;
+    align-items: initial;
+}
+
+.event{
+    font-size: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.descrip{
+    font-size: 13px;
+    text-align: initial;
+    vertical-align: middle;
+    font-weight: lighter;
+
+}
+
+.map-responsive {
+    position: relative;
+    padding-bottom: 400px;
+    height: 0;
+    overflow: hidden;
+}
+.map-responsive iframe{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px; 
+    width: 100% !important;
+    height: 400px !important;
+}
+
 #ubic-elem{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
 }
-#ubic-elem>div{
-    padding: 15%;
+
+.fondo{
+    background-color: #0275d8;
+    color: white;
+    align-items: center;
+    justify-items: center;
 }
