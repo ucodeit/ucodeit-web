@@ -1,5 +1,4 @@
 
-
 /* variables de insercion de datos 
 aqui primero voy a aobtener en un array vacio los datos del DOM ya que este array funcionara
 como variable volatil */
@@ -22,11 +21,7 @@ obtener los datos dentro de un array, y esos datos pasarselos a un json, posteri
 conserve el json, de esta manera, si es necesario se puede dividir el programa en varios scripts para que no se vea la info*/
 /* para que este archivo tenga un mejor orden, debe de estar dividido en funciones */
 var submitForm = document.querySelector("#formPostulantes");
-submitForm.addEventListener('submit', function(){
-
-    obtencionDatos();
-
-})
+enviarEmail();
 
 /* aqui separarremos  */
 function obtencionDatos()
@@ -75,4 +70,36 @@ function guardadoDatos()
     postulante.semestre = arrayPostulante[4].trim();
     postulante.skills = arrayPostulante[5].trim();
     postulante.aboutYou = arrayPostulante[6].trim();
+}
+/* Este es una llamada a la api EmailJS, se espera que esta api pueda recibir los datos del formulario, sin embargo
+hay que comprobar si los recibe desde el form o desde el JSON */
+function enviarEmail()
+{   
+    /* la funcion init permite establecer la conexion con las promesas de la appi, si no se usara esta funcion
+    solo hay que poner el User id del init como 4to parametro de la funcion send o send form */
+    emailjs.init("Va0gnkrE16yx6ZTiH");
+    const btnEnviar = document.getElementById('postForm');
+
+    submitForm.addEventListener('submit', function(event){
+        event.preventDefault();
+        obtencionDatos();
+
+        btnEnviar.value = 'Enviando...';
+        /* estas variables son las que se necesitan para obtener el servicio de la cuenta y poder enviarlos a la funcion.
+        Sin embargo el servicio puede ser cambiado en el futuro si se establece un correo para ucodeit solo para poder usar
+        emailjs ya que ahorita utilizar mi correo personal como servicio intermedio*/
+        const serviceID = 'service_8os59jx';
+        const templateID = 'template_nls1hzv';
+        /* a diferencia de sendForm este metodo permite el envio de mensaje con parametros provenientes de otro lugar
+        que no es el form directamente, de esta manera se supone el script funciona. */
+        emailjs.send(serviceID, templateID, postulante)
+            .then(() => {
+            btnEnviar.value = 'Enviar mensaje';
+            alert('Formulario enviado, Bienvenido tu mensaje sera respondido en un plazo de 72 horas');
+            /* console.log(emailjs); Este console. log es para encontrar si es que enserio recibe dichos parametros*/
+            }, (err) => {
+            btnEnviar.value = 'Enviar mensaje';
+            alert(JSON.stringify(err));
+        });
+    });
 }
