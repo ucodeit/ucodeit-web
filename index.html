@@ -36,14 +36,15 @@
                   <a class="nav-link" href="about_us.html">Acerca de nosotros</a>
                 </li>
               </ul>
-              <form class="d-flex">
+              <!-- Ocultamiento de buscador para primera version -->
+              <form class="d-none"> <!-- previamente class = d-flex -->
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-primary" type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                   </svg>
                 </button>
-              </form>
+              </form> 
             </div>
           </div>
         </div>
@@ -99,7 +100,7 @@
           <h2>Laboratorio</h2>
         </div>
         <!-- Boton Modal Photoshop -->
-        <a class="myButtom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto1">
           <div class="card mb-3 bg-dark text-white lab">
             <div class="row g-0">
               <div class="col-md-4">
@@ -116,7 +117,7 @@
           </div>
         </a>
         <!-- Modal-->
-        <div class="modal fade modal-ps col-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-ps col-8" id="Proyecto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
@@ -213,7 +214,7 @@
           </div>
           <!-- Fin Modal -->
           <!-- Boton Modal Photoshop -->
-          <a class="myButtom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto2">
             <div class="card mb-3 bg-dark text-white lab">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -230,7 +231,7 @@
             </div>       
           </a>
           <!-- Modal-->
-          <div class="modal fade modal-ps col-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade modal-ps col-8" id="Proyecto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
@@ -327,7 +328,7 @@
             </div>
           <!-- Fin Modal -->
           <!-- Boton Modal Photoshop -->
-          <a class="myButtom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto3">
             <div class="card mb-3 bg-dark text-white lab">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -335,8 +336,18 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Node JS</h5>
-                    <p class="card-text">Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+                    <h5 class="card-title">Sistema de gestión de negocio SmartBussines</h5>
+                    <p class="card-text">
+                      Aplicación nativa de Android aplicada a la gestión y administración de negocio, la herramienta está 
+                      dedicada a los negocios que vendan productos, ya sea por unidad o por fracción de unidad
+                    </p>
+                    <ul>
+                      <li>Administración de inventarios, productos por categoría y proveedores</li>
+                      <li>Asistencia en monitoreo d einventario</li>
+                      <li>Gestión de Ventas</li>
+                      <Li>Asistencia de Publicidad y promociones para ventas</Li>
+                      <li>Administración del personal del negocio</li>
+                    </ul>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
@@ -344,7 +355,7 @@
             </div>      
           </a>
           <!-- Modal-->
-          <div class="modal fade modal-ps col-8" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade modal-ps col-8" id="Proyecto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
@@ -358,7 +369,7 @@
                         <div class="col-12">
                           <div class="col-12 row">
                             <div class="col-3 fw-bold" style="color:#A5AEB7;">Inicio:</div>
-                            <div class="col-9 fw-bold" style="color: #101c52">2019</div>
+                            <div class="col-9 fw-bold" style="color: #101c52">2021</div>
                           </div>
                           <div class="col-12 row">
                             <div class="col-3 fw-bold" style="color:#A5AEB7;">Fin:</div>
@@ -367,8 +378,12 @@
                         </div>
                         <div class="col-12">
                           <div class="col-12">
-                            <h3 id="modal-subtitulo">Videojuego</h3>
-                            <p id="modal-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, nemo? Incidunt id delectus suscipit adipisci nostrum, quos quas quis enim non dolorum repudiandae dolores facilis pariatur aliquam eos magnam sunt!</p>
+                            <h3 id="modal-subtitulo">Sistema SmartBussines</h3>
+                            <p id="modal-texto">
+                              El propósito de la herramienta es convertirse en un sistema de gestión de negocio completo, que 
+                              integre algoritmos que resulten en cierto momento predictivos para algunos parámetros del 
+                              negocio.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -440,7 +455,8 @@
               </div>
             </div>
           <!-- Fin Modal -->
-          <div id="Button">
+          <!-- ocultamiento de boton "Todos los proyectos para la primera versión" -->
+          <div id="Button" class="d-none">
             <button type="button" class="btn btn-primary">Todos los proyectos</button>
           </div>
       </div>
@@ -606,7 +622,8 @@
             </div>
           </div>
         </div>
-          <div id="Button">
+          <!-- botón ocultado para primera versión -->
+          <div id="Button" class="d-none">
             <a href="#" class="btn btn-primary">Más información</a>
           </div>
         </div>
