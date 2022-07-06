@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+	<%- include components/head.ejs %>
+	<body>
+		<!--NavBar-->
+		<%- include components/header.ejs %>
+		<main>
+		<!--Banner-->
+		<div class="TituloBackground">
+				<h1>Ucode-it</h1>
+				<p id="txt1"><i>Comunidad de desarrollo de Software de UPIICSA</i></p>
+		</div>
+		<!--Eventos- Carrusel-->
+		<div class="container">
+			<hr>
+			<div id="main-2" name="Eventos">
+				<a name="Eventos"></a>
+				<div id="Title">
+				<h2>Eventos</h2>
+				</div>
+				<div id="carouselButtons" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselButtons" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselButtons" data-bs-slide-to="1" aria-label="Slide 2 "></button>
+					<button type="button" data-bs-target="#carouselButtons" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active" onclick="window.location.href='eventos'">
+						<img src="/images/ejemplo.png" class="d-block w-100" alt="Evento 1">
+					</div>
+					<div class="carousel-item" onclick="window.location.href='eventos'">
+						<img src="/images/ejemplo.png" class="d-block w-100" alt="Evento 2">
+					</div>
+					<div class="carousel-item" onclick="window.location.href='eventos'">
+						<img src="/images/ejemplo.png" class="d-block w-100" alt="Evento 3">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselButtons" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselButtons" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
+			</div> 
+		</div>
+		<!--Laboratorio-->
+		<div class="container">
+			<hr>
+			<div id="Title">
+				<a name="Lab"></a>
+				<h2>Laboratorio</h2>
+			</div>
+			<!-- Boton Modal Proyecto1 -->
+			<a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto1">
+				<div class="card mb-3 bg-dark text-white lab">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="/images/Lab/cap_3.png" class="img-fluid rounded-start" alt="Laboratorio1">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+						<h5 class="card-title">Videojuego</h5>
+						<p class="card-text">
+							La comunidad aprovecha diversas tecnologías a su alcance para conocer los procesos de creación de un 
+							videojuego desde sus etapas de preproducción hasta el mantenimiento post producción que requiere un título 
+							completo
+						</p>
+						<!-- ¿se deberia poner una lista de elementos u objetivos del proyecto? -->
+						<!-- <ul> 
+							<li>Administración de inventarios, productos por categoría y proveedores</li>
+							<li>Asistencia en monitoreo d einventario</li>
+							<li>Gestión de Ventas</li>
+							<Li>Asistencia de Publicidad y promociones para ventas</Li>
+							<li>Administración del personal del negocio</li>
+						</ul> -->
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                
+						</div>
+					</div>
+				</div>
+				</div>
+			</a>
+			<!-- Modal Proyecto1-->
+			<div class="modal fade modal-ps col-8" id="Proyecto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel"></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="margin: 5px 20px 5px 20px;">
+						<div class="row mb-4 mycolumn">
+						<div class="col-6 myspace">
+							<div class="row" style="gap: 10px;">
+								<div class="col-12">
+								<div class="col-12 row">
+									<div class="col-3 fw-bold" style="color:#A5AEB7;">Inicio:</div>
+									<div class="col-9 fw-bold" style="color: #101c52">2019</div>
+								</div>
+								<div class="col-12 row">
+									<div class="col-3 fw-bold" style="color:#A5AEB7;">Fin:</div>
+									<div class="col-9 fw-bold" style="color: #101c52">En Proceso</div>
+								</div>
+								</div>
+								<div class="col-12">
+								<div class="col-12">
+									<h3 id="modal-subtitulo">Videojuego</h3>
+									<p id="modal-texto">
+										“Dicen que hay sucesos tan extraños que nadie puede explicar, empiezan como rumores para asustar a 
+										los niños, pero esta historia que murmuran los labios de los pueblos es una leyenda que puede 
+										trastornar a la gente.” 
+										<br/>
+										En este proyecto se elabora un videojuego survival horror en 2D, realizando las distintas etapas del 
+										desarrollo del videojuego; desde el arte, las mecánicas y la programación de este.  
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 myspaceImg">
+							<div class="card">
+								<div class="card-header">Demo</div>
+								<img src="/images/Lab/prota 3.png" class="card-img-top" alt="">
+								<div class="card-body">
+								<p class="card-text"></p>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-12"  id="modal-decoration">
+							<h3 class="text-center">Etapas del Proyecto</h3>
+						</div>
+						<div class="col-4">
+							<div class="col-12 align-middle">
+								<span class="text-center" id="modal-icon-decoration">
+								<h2><i class="bi bi-lightbulb"></i></h2>
+								</span>
+							</div>
+							<div class="col-12 text-center">
+								<h3>Etapa 1 <br/><hr/>
+								Narrativa
+								</h3>
+							</div>
+							<div class="col-12 text-center justify-content-center">
+								<p id="modal-texto">
+								Se realiza un texto narrativo que cuente la historia del videojuego, todo a forma de prosa. Se hace 
+								especial énfasis en las acciones de los personajes, el ambiente y las diferentes vertientes que puede 
+								tener la historia.
+								</p>
+							</div>  
+							</div>
+							<div class="col-4">
+								<div class="col-12 align-middle">
+								<span class="text-center" id="modal-icon-decoration">
+									<h2><i class="bi bi-lightbulb"></i></h2>
+								</span>
+								</div>
+								<div class="col-12 text-center">
+								<h3>Etapa 2 <br/><hr/>
+									Guion.
+								</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+								<p id="modal-texto">
+									En esta etapa se pasa la narración a un guion de diálogos y acciones, se crea el árbol de diálogos 
+									que se utilizará en el videojuego.  
+								</p>
+								</div>
+
+							</div>
+							<div class="col-4">
+								<div class="col-12 align-middle">
+								<span class="text-center" id="modal-icon-decoration">
+									<h2><i class="bi bi-lightbulb"></i></h2>
+								</span>
+								</div>
+								<div class="col-12 text-center">
+								<h3>Etapa 3 <br/><hr/>
+									Escaleta y Mecánicas.
+								</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+								<p id="modal-texto">
+									La escaleta define los escenarios, la libertad de movimiento que tendrán los personajes, así como 
+									los elementos con los que jugador podrá interactuar. También, se diseñan las mecánicas de juegos, a 
+									esto también se le conoce como (Game Design).
+								</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="row justify-content-md-center" id="modal-decoration">
+							<div class="col-12 text-center">
+								<h4>¿Te gustó el Proyecto?</h4>
+								<button type="button" class="btn btn-primary col-6 mt-3 fw-bold" data-bs-dismiss="modal" style="font-size: 18px;" onclick="window.location.href='formulario'">¡Únete!</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- Fin Modal Proyecto1 -->
+				<!-- Boton Modal Proyecto2 -->
+				<a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto2">
+				<div class="card mb-3 bg-dark text-white lab">
+					<div class="row g-0">
+						<div class="col-md-4">
+						<img src="/images/Lab/ComunitiesImage1.jpg" class="img-fluid rounded-start" alt="Laboratorio 3">
+						</div>
+						<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Communities</h5>
+							<p class="card-text">
+								Aplicación Web dedicada a la administración, planificación de eventos y documentación de actividades 
+								culturales para las comunidades de la UPIICSA, Esta herramienta facilitará los diferentes procesos que 
+								conllevar realizar una feria, una exposición, un panel de expertos, etc. 
+							</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+						</div>
+					</div>
+				</div>       
+				</a>
+				<!-- Modal Proyecto2-->
+				<div class="modal fade modal-ps col-8" id="Proyecto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel"></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="margin: 5px 20px 5px 20px;">
+						<div class="row mb-4 mycolumn">
+							<div class="col-6 myspace">
+								<div class="row" style="gap: 10px;">
+								<div class="col-12">
+									<div class="col-12 row">
+										<div class="col-3 fw-bold" style="color:#A5AEB7;">Inicio:</div>
+										<div class="col-9 fw-bold" style="color: #101c52">2019</div>
+									</div>
+									<div class="col-12 row">
+										<div class="col-3 fw-bold" style="color:#A5AEB7;">Fin:</div>
+										<div class="col-9 fw-bold" style="color: #101c52">En Proceso</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="col-12">
+										<h3 id="modal-subtitulo">Communities</h3>
+										<p id="modal-texto">
+										Aplicación Web dedicada a la administración, planificación de eventos y documentación de 
+										actividades culturales para las comunidades de la UPIICSA, Esta herramienta facilitará los 
+										diferentes procesos que conllevar realizar una feria, una exposición, un panel de expertos, etc.
+										</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-6 myspaceImg">
+								<div class="card">
+								<div class="card-header">Demo</div>
+								<img src="/images/Lab/ComunitiesImage3.jpg" class="card-img-top" alt="">
+								<div class="card-body">
+									<p class="card-text"></p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12"  id="modal-decoration">
+								<h3 class="text-center">Etapas del Proyecto</h3>
+							</div>
+							<div class="col-4">
+								<div class="col-12 align-middle">
+								<span class="text-center" id="modal-icon-decoration">
+									<h2><i class="bi bi-lightbulb"></i></h2>
+								</span>
+								</div>
+								<div class="col-12 text-center">
+								<h3>Etapa 1 <br/><hr/>
+									Diseño de Requerimientos. 
+								</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+								<p id="modal-texto">
+									Se analizan los detalles de todos los procesos que conlleva realizar un evento cultural y basado 
+									en la investigación se destacan aquellos que pueden recibir una autorización virtual mediante una 
+									aplicación web detallando el desarrollo en diagramas y medios visuales.  
+								</p>
+								</div>  
+								</div>
+								<div class="col-4">
+								<div class="col-12 align-middle">
+									<span class="text-center" id="modal-icon-decoration">
+										<h2><i class="bi bi-lightbulb"></i></h2>
+									</span>
+								</div>
+								<div class="col-12 text-center">
+									<h3>Etapa 2 <br/><hr/>
+										Maquetación y Diagramas 
+									</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+									<p id="modal-texto">
+										Los diagramas que se manejan varían dependiendo de las secciones que lleva el proyecto, estos 
+										diagramas y vistas tienen el objetivo de comunicar a los miembros del equipo a detalle todo lo 
+										necesario para el flujo de la información y la experiencia del usuario. Las tecnologías que se 
+										utilizan generalmente son trello y lucidChart (o a manopla).
+									</p>
+								</div>
+
+								</div>
+								<div class="col-4">
+								<div class="col-12 align-middle">
+									<span class="text-center" id="modal-icon-decoration">
+										<h2><i class="bi bi-lightbulb"></i></h2>
+									</span>
+								</div>
+								<div class="col-12 text-center">
+									<h3>Etapa 3 <br/><hr/>
+										Desarrollo 
+									</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+									<p id="modal-texto">
+										Para la etapa de desarrollo se toma en cuenta el seguimiento de la planificación en trello junto 
+										a las representaciones de pantallas, de esta manera se crea de manera paralela en React.js la 
+										maquetación necesaria para los elementos que conforman este proyecto y también el backend que 
+										validara los elementos necesarios para que la aplicación tenga comunicación con la API y base de datos. 
+									</p>
+								</div>
+								</div>
+
+							</div>
+							<div class="row justify-content-md-center" id="modal-decoration">
+								<div class="col-12 text-center">
+								<h4>¿Te gustó el Proyecto?</h4>
+								<button type="button" class="btn btn-primary col-6 mt-3 fw-bold" data-bs-dismiss="modal" style="font-size: 18px;" onclick="window.location.href='formulario'">¡Únete!</button>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Modal Proyecto2 -->
+				<!-- Boton Modal Proyecto3 -->
+				<a class="myButtom" data-bs-toggle="modal" data-bs-target="#Proyecto3">
+				<div class="card mb-3 bg-dark text-white lab">
+					<div class="row g-0">
+						<div class="col-md-4">
+						<img src="/images/Lab/SmartbussinesImage.jpeg" class="img-fluid rounded-start" alt="Laboratorio 3">
+						</div>
+						<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Sistema de gestión de negocio SmartBussines</h5>
+							<p class="card-text">
+								Aplicación nativa de Android aplicada a la gestión y administración de negocio, la herramienta está 
+								dedicada a los negocios que vendan productos, ya sea por unidad o por fracción de unidad
+							</p>
+							<ul>
+								<li>Administración de inventarios, productos por categoría y proveedores</li>
+								<li>Asistencia en monitoreo d einventario</li>
+								<li>Gestión de Ventas</li>
+								<Li>Asistencia de Publicidad y promociones para ventas</Li>
+								<li>Administración del personal del negocio</li>
+							</ul>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+						</div>
+					</div>
+				</div>      
+				</a>
+				<!-- Modal Proyecto3-->
+				<div class="modal fade modal-ps col-8" id="Proyecto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel"></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="margin: 5px 20px 5px 20px;">
+						<div class="row mb-4 mycolumn">
+							<div class="col-6 myspace">
+								<div class="row" style="gap: 10px;">
+								<div class="col-12">
+									<div class="col-12 row">
+										<div class="col-3 fw-bold" style="color:#A5AEB7;">Inicio:</div>
+										<div class="col-9 fw-bold" style="color: #101c52">2021</div>
+									</div>
+									<div class="col-12 row">
+										<div class="col-3 fw-bold" style="color:#A5AEB7;">Fin:</div>
+										<div class="col-9 fw-bold" style="color: #101c52">En Proceso</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="col-12">
+										<h3 id="modal-subtitulo">Sistema SmartBussines</h3>
+										<p id="modal-texto">
+										El propósito de la herramienta es convertirse en un sistema de gestión de negocio completo, que 
+										integre algoritmos que resulten en cierto momento predictivos para algunos parámetros del 
+										negocio.
+										</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-6 myspaceImg">
+								<div class="card">
+								<div class="card-header">Demo</div>
+								<img src="/images/Lab/SmartbussinesImage.jpeg" class="card-img-top" alt="">
+								<div class="card-body">
+									<p class="card-text"></p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12"  id="modal-decoration">
+								<h3 class="text-center">Etapas del Proyecto</h3>
+							</div>
+							<div class="col-4">
+								<div class="col-12 align-middle">
+								<span class="text-center" id="modal-icon-decoration">
+									<h2><i class="bi bi-lightbulb"></i></h2>
+								</span>
+								</div>
+								<div class="col-12 text-center">
+								<h3>Etapa 1 <br/><hr/>
+									Documento de requerimientos
+								</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+								<p id="modal-texto">
+									Analizar los requisitos que los dueños de negocio buscan para su negocio, se incluyen todos 
+									aquellos que podrían ser útiles para un negocio, se seleccionan los requisitos que son útiles 
+									para el sistema y también los requisitos que son necesarios para la realización técnica del sistema, 
+									dichos requisitos se plasman en un documento de requerimientos.
+								</p>
+								</div>  
+								</div>
+								<div class="col-4">
+								<div class="col-12 align-middle">
+									<span class="text-center" id="modal-icon-decoration">
+										<h2><i class="bi bi-lightbulb"></i></h2>
+									</span>
+								</div>
+								<div class="col-12 text-center">
+									<h3>Etapa 2 <br/><hr/>
+										Maquetación y diagramas
+									</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+									<p id="modal-texto">
+										Una vez obtenido el documento de requerimientos, se procede a realizar un correcto diseño de los 
+										diagramas, para ello se utiliza la herramienta Trello
+									</p>
+								</div>
+
+								</div>
+								<div class="col-4">
+								<div class="col-12 align-middle">
+									<span class="text-center" id="modal-icon-decoration">
+										<h2><i class="bi bi-lightbulb"></i></h2>
+									</span>
+								</div>
+								<div class="col-12 text-center">
+									<h3>Etapa 3 <br/><hr/>
+										Desarrollo
+									</h3>
+								</div>
+								<div class="col-12 text-center justify-content-center">
+									<p id="modal-texto">
+										En esta etapa es necesario tener conocimientos básicos en java y/o javascript, se seguirá la 
+										planeación acordada en la plataforma trello, se realizarán las interfaces gráficas y el código 
+										del frontend de manera paralela, el lenguaje de programación que se utilizará para el frontend 
+										será java y xml para las respectivas interfaces de usuario, para el lenguaje de programación del 
+										backend será con javascript.
+									</p>
+								</div>
+								</div>
+
+							</div>
+							<div class="row justify-content-md-center" id="modal-decoration">
+								<div class="col-12 text-center">
+								<h4>¿Te gustó el Proyecto?</h4>
+								<button type="button" class="btn btn-primary col-6 mt-3 fw-bold" data-bs-dismiss="modal" style="font-size: 18px;" onclick="window.location.href='formulario'">¡Únete!</button>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Modal Proyecto3-->
+				<!-- ocultamiento de boton "Todos los proyectos para la primera versión" -->
+				<div id="Button" class="d-none">
+				<button type="button" class="btn btn-primary">Todos los proyectos</button>
+				</div>
+		</div>
+		<hr>
+		<!--Integrantes-->
+			<div id="main-4">
+				<div id="Title">
+				<h2>Conoce a nuestros Integrantes</h2>
+				</div>
+				<div class="row justify-content-center integrantes">
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Luis Gonzalez</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Dax</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Karol</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Lily</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Brandon</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Luis Fernando</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Aylin</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Ian</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Diego</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Zaid</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+				<div class="card col-3 col-sm-4 bg-white info">
+				<div class="/imagesPerfil">
+					<img src="/images/fotoperfil.png" class="imgPerfil" alt="Integrante1">
+				</div>
+				<div class="infoPerfil">
+					<p class="nombrePerfil">Axel</p>
+					<p class="datosPerfil"><i>Desarrollador web</i></p>
+					<div class="redesSocialesPart">
+						<a href="https://www.facebook.com" target="_blank"><img class="rsImg" src="/images/Logos/facebookgris.png" alt="redesociales"></a>
+						<a href="https://www.twitter.com" target="_blank"><img class="rsImg" src="/images/Logos/twittergris.png" alt="redesociales"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img class="rsImg" src="/images/Logos/linkind.png" alt="redesociales"></a>
+					</div>
+				</div>
+				</div>
+			</div>
+				<!-- botón ocultado para primera versión -->
+				<div id="Button" class="d-none">
+				<a href="#" class="btn btn-primary">Más información</a>
+				</div>
+			</div>
+		<hr>
+		<!--Solicitud-->
+		<div id="main-5">
+			<div id="Title" style="margin: 15px;">
+				<h2>¿Quieres ser parte de la comunidad?</h2>
+				<h4><i>Llena el formulario</i></h4>
+			</div>
+			<div id="Button">
+				<a href="formulario" class="btn btn-primary">Solicitud</a>
+			</div>
+		</div>
+		</main>
+
+		<!--Contacto-->
+		<%- include components/footer.ejs %>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	</body>
+</html> 
