@@ -1,7 +1,7 @@
 nav{
     padding-top: 0 !important;
     padding-bottom: .3rem !important; 
-    background-image: url(../Imagenes/Mesa\ de\ trabajo\ 1.png);
+    background-image: url('../images/Mesa de trabajo 1.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -17,7 +17,7 @@ nav{
 }
 
 .TituloBackground{
-    background-image: url(../Imagenes/bannerUpiicsa.png);
+    background-image: url('../images/bannerUpiicsa.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

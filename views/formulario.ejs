@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-   <%- include components/head.ejs %>
+   <%- include('./components/head.ejs') %>
    <body>
-      <%- include components/header.ejs %>
+      <%- include('./components/header.ejs') %>
       <main>
+         <div id="main-1">
+            <h2>Solicitud</h2>
+            <p>Rellena el siguiente formulario de solicitud</p>
+         </div>
          <div class="container" id="miSection">
-            <div id="main-1">
-               <h2>Solicitud</h2>
-               <p>Rellena el siguiente formulario de solicitud</p>
-            </div>
             <div class="formulario">
                   <div class="formSpace">
                   <h2>Cuentanos acerca de ti</h2>
@@ -83,7 +83,7 @@
          </div>
       </main>
       <!--Contacto-->
-      <%- include components/footer.ejs %>
+      <%-include('./components/footer.ejs') %>
    </body>
 </html>
 

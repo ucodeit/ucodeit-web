@@ -15,7 +15,7 @@ router.get('/index', function(req, res, next) {
   res.render('index', { 
     title: 'UCode-It', 
     eventName: 'index', 
-    jsFiles: ['index'], 
+    jsFiles: ['./index.js'], 
     styleSheetFiles: ['main', 'index'] 
   });
 });
