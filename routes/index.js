@@ -15,7 +15,7 @@ router.get('/index', function(req, res, next) {
   res.render('index', { 
     title: 'UCode-It', 
     eventName: 'index', 
-    jsFiles: ['./index.js'], 
+    jsFiles: ['index'], 
     styleSheetFiles: ['main', 'index'] 
   });
 });
@@ -35,15 +35,6 @@ router.get('/eventos', function(req, res, next) {
     eventName: 'eventos',
     jsFiles: ['ajuste'],
     styleSheetFiles: ['eventos', 'main', 'index']
-  });
-});
-
-router.get('/formulario', function(req, res, next) {
-  res.render('formulario', { 
-    title: 'Unete', 
-    eventName: 'formulario',
-    jsFiles: ['formulario'],
-    styleSheetFiles: ['formulario', 'main', 'index']
   });
 });
 
