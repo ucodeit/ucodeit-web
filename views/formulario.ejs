@@ -16,23 +16,23 @@
                   <!-- Para hacer pruebas de tus funciones de submit debes de establecer onsubmit="return false" o
                   la pagina se recargara automaticamente tras acabar de realizar la función. una vez que termines de
                   hacer pruebas puedes borrar esta propiedad para que continue el metodo-->
-                  <form action="#" id="formPostulantes" method="POST">
+                  <form action="/formulario" id="formPostulantes" method="post">
                      <div class="fields">
                         <div>
                            <label for="name" class="form-label">Nombre</label>
-                           <input type="text" class="form-control form-control-sg" id="nombre"  required>
+                           <input type="text" class="form-control form-control-sg" name="nombre" id="nombre"  required>
                         </div>
                         <div>
                            <label for="phoneNumber" class="form-label">Teléfono</label>
-                           <input type="text" class="form-control form-control-sg" id="telefono" requiered>
+                           <input type="text" class="form-control form-control-sg" name="telefono" id="telefono" requiered>
                         </div>
                         <div>
                            <label for="mail" class="form-label">Correo Electrónico</label>
-                           <input type="email" class="form-control form-control-sg" id="mail" placeholder="name@example.com" required>
+                           <input type="email" class="form-control form-control-sg" name="email" id="mail" placeholder="name@example.com" required>
                         </div>
                         <div>
                            <label for="career" class="form-label">Carrera</label>
-                           <select class="form-select" id="carrera" aria-label="semestre">
+                           <select class="form-select" name="carrera" id="carrera" aria-label="semestre">
                               <option value="ing_informatica" selected>Ingeniería en Informática</option>
                               <option value="ing_industrial">Ingeniería Industrial</option>
                               <option value="adm_industrial">Administración Industrial</option>
@@ -41,7 +41,7 @@
                         </div>
                         <div>
                            <label for="semester" class="form-label">Semestre</label>
-                           <select class="form-select" id="semestre" aria-label="semestre" style="width: 80px;">
+                           <select class="form-select" name="semestre" id="semestre" aria-label="semestre" style="width: 80px;">
                               <option value="1" selected>1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -56,11 +56,11 @@
                      <div class="areaText">
                         <div>
                         <label for="skills" class="form-label">Cuentanos tus habilidades</label>
-                        <textarea class="form-control" id="skills" rows="3" requied></textarea>
+                        <textarea class="form-control" name="skills" id="skills" rows="3" requied></textarea>
                         </div>
                         <div>
                         <label for="aboutyou" class="form-label">Cuentanos un poco de ti</label>
-                        <textarea class="form-control" id="aboutYou" rows="3" required></textarea>
+                        <textarea class="form-control" name="aboutYou" id="aboutYou" rows="3" required></textarea>
                         </div>
                         
                         <input type="submit" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
