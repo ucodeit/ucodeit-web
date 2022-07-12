@@ -11,24 +11,27 @@
          <div class="container" id="miSection">
             <div class="formulario">
                   <div class="formSpace">
+                     <div id="alert">
+
+                     </div>
                   <h2>Cuentanos acerca de ti</h2>
                   <p>Mandanos mensaje y te responderemos en menos de 72 horas</p>
                   <!-- Para hacer pruebas de tus funciones de submit debes de establecer onsubmit="return false" o
                   la pagina se recargara automaticamente tras acabar de realizar la función. una vez que termines de
                   hacer pruebas puedes borrar esta propiedad para que continue el metodo-->
-                  <form action="/formulario" id="formPostulantes" method="post">
+                  <form id="formPostulantes" method="post">
                      <div class="fields">
                         <div>
                            <label for="name" class="form-label">Nombre</label>
-                           <input type="text" class="form-control form-control-sg" name="nombre" id="nombre"  required>
+                           <input type="text" class="form-control form-control-sg" name="nombre" id="nombre" minlength="3" required>
                         </div>
                         <div>
                            <label for="phoneNumber" class="form-label">Teléfono</label>
-                           <input type="text" class="form-control form-control-sg" name="telefono" id="telefono" requiered>
+                           <input type="tel" class="form-control form-control-sg" name="telefono" id="telefono" maxlength="10" requiered>
                         </div>
                         <div>
                            <label for="mail" class="form-label">Correo Electrónico</label>
-                           <input type="email" class="form-control form-control-sg" name="email" id="mail" placeholder="name@example.com" required>
+                           <input type="email" class="form-control form-control-sg" name="email" id="email" placeholder="name@example.com" required>
                         </div>
                         <div>
                            <label for="career" class="form-label">Carrera</label>
@@ -56,14 +59,14 @@
                      <div class="areaText">
                         <div>
                         <label for="skills" class="form-label">Cuentanos tus habilidades</label>
-                        <textarea class="form-control" name="skills" id="skills" rows="3" requied></textarea>
+                        <textarea class="form-control" name="skills" id="skills" rows="3" minlength="6" requied></textarea>
                         </div>
                         <div>
                         <label for="aboutyou" class="form-label">Cuentanos un poco de ti</label>
-                        <textarea class="form-control" name="aboutYou" id="aboutYou" rows="3" required></textarea>
+                        <textarea class="form-control" name="aboutYou" id="aboutYou" rows="3" minlength="10" required></textarea>
                         </div>
                         
-                        <input type="submit" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
+                        <input type="submit" onclick="return validarDatos();" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
                      </div>
                         
                   </form>
