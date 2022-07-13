@@ -1,4 +1,7 @@
 const validarDatos = () => {
+  //La unica diferencia del regex del js con el del middleware es:
+  //Al coindicir con un caracter que no es solicitado, mandara true en la condición y mandara el error
+  //en el middleware tiene que coincidir con la regex para que pueda solicitar de manera correcta la peticion
   emailRegex =
     /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
   const alert = document.querySelector("#alert");
