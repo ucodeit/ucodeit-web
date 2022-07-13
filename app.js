@@ -35,15 +35,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.use((err, req, res, next) => {
-  if (err && err.error && err.error.isJoi) {
-    res.status(400).json({
-      type: err.type, // will be "query" here, but could be "headers", "body", or "params"
-      message: err.error.toString()
-    });
-  } else {
-    // pass on to another error handler
-    next(err);
-  }
-});
 module.exports = app;
