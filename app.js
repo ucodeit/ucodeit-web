@@ -5,12 +5,29 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var form = require('./routes/form');
-var app = express();
+const app = express();
+var session = require("express-session");
+const flash = require("connect-flash");
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+
+app.use(
+  session({
+    name : "response",
+    secret: "ucodeit123",
+    resave: true,
+    saveUninitialized: false,
+    cookie: {
+      maxAge: 3000,
+    },
+  })
+);
+
+app.use(flash());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
