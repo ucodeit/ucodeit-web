@@ -19,12 +19,16 @@
 
 .collage > div{
     margin: 8px 0px !important; 
-    padding: 0px 6px;
 }
 
 .collage > div > img{
     box-shadow: 0px 0px 3px 1px black !important;
     border-radius: 15px;
+}
+
+#eventContainer > .collage > div > img{
+    height: 200px;
+    width: 300px;
 }
 
 .elem-event{
@@ -133,3 +137,8 @@
     align-items: center;
     justify-items: center;
 }
+
+#agendaContainer{
+    display: none;
+}
+
