@@ -29,6 +29,7 @@
 #eventContainer > .collage > div > img{
     height: 200px;
     width: 300px;
+    max-width: 300px !important;
 }
 
 .elem-event{
@@ -95,6 +96,11 @@
     text-align: left;
     vertical-align: middle;
     font-weight: bold;
+}
+
+#eventContainer
+{
+    margin-left: 20vh;
 }
 
 .descrip{
