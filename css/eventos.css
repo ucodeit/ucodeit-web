@@ -26,7 +26,18 @@
     border-radius: 15px;
 }
 
-#eventContainer > .collage > div > img{
+.collage{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0 15vh;
+}
+
+.collage > div{
+    justify-content: center;
+}
+
+/* #eventContainer >  */.collage > div > img{
     height: 200px;
     width: 300px;
     max-width: 300px !important;
@@ -38,6 +49,8 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .elem-event>p{
     padding-left: 16%;
@@ -100,7 +113,9 @@
 
 #eventContainer
 {
-    margin-left: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .descrip{
