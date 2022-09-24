@@ -24,11 +24,9 @@ nav{
 
 #main-1{
     /*background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/historia2.PNG);*/
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,1)) ,url(../images/historia2.PNG);
     background-repeat: no-repeat;
     background-position: initial;
     background-size: cover;
-    color: lavender;
     display: flex;
     align-items: center;
     justify-content: center;
