@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 let aboutUsRouter = require('./about-us');
 let eventsRouter = require('./events');
+let formRouter = require('./form');
 
 
 /* GET home page. */
@@ -30,5 +31,6 @@ router.get('/index', function(req, res, next) {
 
 router.use(aboutUsRouter);
 router.use(eventsRouter);
+router.use(formRouter);
 
 module.exports = router;
