@@ -26,22 +26,24 @@
     border-radius: 15px;
 }
 
-.collage{
+.collage-XXXVII-Semana-interdisciplinaria{
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 0 15vh;
-}
-
-.collage > div{
+ }
+ 
+ .collage-XXXVII-Semana-interdisciplinaria > div{
     justify-content: center;
-}
-
-/* #eventContainer >  */.collage > div > img{
+ }
+ 
+ .collage-XXXVII-Semana-interdisciplinaria > div > img{
     height: 200px;
     width: 300px;
     max-width: 300px !important;
-}
+    border-radius: 15px;
+ }
+ 
 
 .elem-event{
     align-items: center;

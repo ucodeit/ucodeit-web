@@ -2,9 +2,9 @@ let express = require('express');
 let router = express.Router();
 
 
-router.get('/eventos', function(req, res, next) {
-   res.render('eventos', { 
-     title: 'Eventos', 
+router.get('/xxxvii-semana-interdisciplinaria', function(req, res, next) {
+   res.render('xxxvii-semana-interdisciplinaria', { 
+     title: 'XXXVII Semana Interdisciplinaria', 
      eventName: 'eventos',
      jsFiles: ['ajuste'],
      styleSheetFiles: ['eventos', 'main', 'index']
