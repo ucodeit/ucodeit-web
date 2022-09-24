@@ -1,0 +1,117 @@
+nav{
+    padding-top: 0 !important;
+    padding-bottom: .3rem !important; 
+    background-image: url('../images/Mesa de trabajo 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar > li{
+    align-items: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.icon {
+    padding-left: 20px;
+}
+
+.TituloBackground{
+    background-image: url('../images/bannerUpiicsa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 80px 0;
+}
+
+#txt1{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row !important;
+    width: 15rem;
+    margin: 10px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    box-shadow: 0px 0px 1px 1px black !important;
+}
+
+.integrantes{
+    margin: 0% !important;
+}
+
+.imgPerfil{
+    width: 80px;
+    height: 80px;
+    position: initial;
+    border-radius: 3px;
+}
+
+.infoPerfil{
+    display: block;
+    text-align: initial;
+    padding: 3px 7px 0px 7px;
+}
+
+.nombrePerfil{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 !important;
+}
+
+.datosPerfil{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.resdesSocialesPart{
+    display: flex;
+    flex-direction: row;
+}
+
+.rsImg{
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px 0px 0px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes{
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+#Button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+hr{
+    margin: 5px 0px;
+}

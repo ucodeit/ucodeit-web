@@ -1,0 +1,39 @@
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu" style="padding-top: 0; padding-bottom: .3rem;">
+    <div class="container-fluid">
+      <a class="navbar-brand icon" href="/">
+        <img src="/images/Uc.png" width="50" height="58" class="d-inline-block align-bottom">
+        ode-It
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page"  href="#Lab">Laboratorio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Eventos">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us">Acerca de nosotros</a>
+            </li>
+          </ul>
+          <!-- Ocultamiento de buscador para primera version -->
+          <% if(true) { %>
+          <form class="d-none">
+          <!-- <form class="d-flex"> previamente class = d-flex -->
+          <% } %>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-primary" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+              </svg>
+            </button>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </nav>
+ </header>

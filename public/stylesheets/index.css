@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-image: url('../images/Mesa de trabajo 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar-nav > li{
+    align-items: center;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+.icono {
+    padding-left: 20px;
+}
+
+/*Parte central de la página*/
+
+#main-1{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/historia2.PNG);*/
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+}
+
+
+#Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*Temporal*/
+    height: 50px;
+}
+
+#Button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#main-3-R{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#Laboratorio1, #Laboratorio2, #Laboratorio3{
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+#main-4-Integrantes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;;
+}
+@media screen and (max-width: 920px){
+    .mycolumn{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .myspace{
+        width: 90% !important;
+    }
+
+    .myspaceImg{
+        width: 90% !important;
+        /*margin-left: 8.333%;*/
+
+    }
+}
+
+.modal-ps{
+    color:black;
+}
+#modal-subtitulo{
+    color: #000000;
+}
+#modal-texto{
+    color: #808080;
+    font-size: 13px;
+}
+#modal-decoration{
+    border-top: 1px solid #dee2e6;
+    padding-top: 25px;
+}
+.bi-lightbulb{
+    background-color: #b9b9b9;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 5px 16px 16px 16px;
+}
+
+.myButtom{
+    text-decoration: none;
+}
+.myButtom:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.lab{
+    box-shadow: 0px 0px 5px 1px black !important;
+}
+
+#Integrante{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 200px;
+}
+#Imagen-I{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes{
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+/*Carrusel parte Luis*/
+

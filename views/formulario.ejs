@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <%- include('./components/head.ejs') %>
+   <body>
+      <%- include('./components/header.ejs') %>
+      <main>
+         <div id="main-1">
+            <h2>Solicitud</h2>
+            <p>Rellena el siguiente formulario de solicitud</p>
+         </div>
+         <div class="container" id="miSection">
+            <div class="formulario">
+                  <div class="formSpace">
+                     <div id="alert">
+                        <%- include('./components/alert.ejs') %>
+                     </div>
+                  <h2>Cuentanos acerca de ti</h2>
+                  <p>Mandanos mensaje y te responderemos en menos de 72 horas</p>
+                  <form id="formPostulantes" method="post">
+                     <div class="fields">
+                        <div>
+                           <label for="name" class="form-label">Nombre</label>
+                           <input type="text" class="form-control form-control-sg" name="nombre" id="nombre" minlength="3" required>
+                        </div>
+                        <div>
+                           <label for="phoneNumber" class="form-label">Teléfono</label>
+                           <input type="tel" class="form-control form-control-sg" name="telefono" id="telefono" maxlength="10" requiered>
+                        </div>
+                        <div>
+                           <label for="mail" class="form-label">Correo Electrónico</label>
+                           <input type="email" class="form-control form-control-sg" name="email" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div>
+                           <label for="career" class="form-label">Carrera</label>
+                           <select class="form-select" name="carrera" id="carrera" aria-label="semestre">
+                              <option value="Ing. Informatica" selected>Ingeniería en Informática</option>
+                              <option value="Ing. Industrial">Ingeniería Industrial</option>
+                              <option value="Admón. Industrial">Administración Industrial</option>
+                              <option value="Ing. Transporte">Ingeniería en Transporte</option>
+                           </select>
+                        </div>
+                        <div>
+                           <label for="semester" class="form-label">Semestre</label>
+                           <select class="form-select" name="semestre" id="semestre" aria-label="semestre" style="width: 80px;">
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="areaText">
+                        <div>
+                        <label for="skills" class="form-label">Cuentanos tus habilidades</label>
+                        <textarea class="form-control" name="skills" id="skills" rows="3" minlength="6" requied></textarea>
+                        </div>
+                        <div>
+                        <label for="aboutyou" class="form-label">Cuentanos un poco de ti</label>
+                        <textarea class="form-control" name="aboutYou" id="aboutYou" rows="3" minlength="10" required></textarea>
+                        </div>
+                        
+                        <input type="submit" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
+                     </div>
+                        
+                  </form>
+                  </div>
+                  <div class="contact">
+                     <h2>Info. de Contacto</h2>
+                     <hr>
+                     <div class="points">
+                        <p class="point">Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX</li>
+                        <p class="point">ucodeit.upiicsa@gmail.com</li>
+                        <p class="point">5566994400</li>
+                     </div>
+                     
+                  </div>
+            </div>
+            
+         </div>
+      </main>
+      <!--Contacto-->
+      <%-include('./components/footer.ejs') %>
+   </body>
+</html>
+
+
