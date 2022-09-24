@@ -35,18 +35,18 @@ const contactForm = async function(req, res, next) {
 
 async function envioDatos(input) {
    let envio = await transporter.sendMail({
-     from: "Datos de aspirante <contacto@ucodeit.com.mx>", // sender address
-     to: "brandon.gamboa@ucodeit.com.mx", // list of receivers
-     subject: "Nuevo alumno", // Subject line
-     html: `<b>${input.nombre}</b> 
-     <b>${input.telefono}</b>
-     <b>${input.email}</b>
-     <b>${input.carrera}</b> 
-     <b>${input.semestre}</b>
-     <b>${input.skills}</b>
-     <b>${input.aboutYou}</b>`,
+     from: "Datos de aspirante <contacto@ucodeit.com.mx>",
+     to: "brandon.gamboa@ucodeit.com.mx, david.arellano@ucodeit.com.mx",
+     subject: "Nuevo aspirante",
+     html: `<b>Nombre del aspirante:</b> ${input.nombre}</br> 
+     <b>Número de telefono:</b> ${input.telefono}</br>
+     <b>Correo electrónico:</b> ${input.email}</br>
+     <b>Carrera:</b> ${input.carrera}</br> 
+     <b>Semestre:</b> ${input.semestre}</br>
+     <b>Skills:</b> ${input.skills}</br>
+     <b>Información adicional sobre el aspirnte:</b> ${input.aboutYou}`,
    });
-   //retornamos la let envio para poder manejar la promesa|
+
    return envio;
  }
  
