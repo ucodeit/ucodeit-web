@@ -1,7 +1,7 @@
 const express = require("express");
-const transporter = require("./../src/config/mail");
 const Joi = require("joi");
 const router = express.Router();
+const formControllers = require('../controllers/form');
 //Se crea un esquema Joi en donde definimos los campos que vamos a validar
 const schema = Joi.object({
   //Nombre será un string con un minimo de 3 caracteres y la regex lo que va aceptar es palabras de la Aa-Zz, mas especiales y espacios
@@ -11,7 +11,7 @@ const schema = Joi.object({
     .required(),
   //telefono lo manejaremos como string para que puedar usar el metodo lenght para el tamaño,y el regex significa que solo acpeta numeros
   telefono: Joi.string().length(10).pattern(/^\d+$/).required(),
-  //Email igual sera un string donde el dominio minimo tiene que tener dos caracteres y el regex solo acepta alfanumericos, cualquier caracter
+  //Email igual sera un string do+nde el dominio minimo tiene que tener dos caracteres y el regex solo acepta alfanumericos, cualquier caracter
   //especial mandara error
   email: Joi.string()
     .email({
@@ -33,6 +33,8 @@ router.get("/", function (req, res, next) {
     jsFiles: ["formulario"],
     styleSheetFiles: ["formulario", "main", "index"],
     alert: undefined,
+    sucess_msg: req.flash('sucess_msg')[0],
+    error_msg: req.flash('error_msg')[0],
   });
 });
 
@@ -50,11 +52,18 @@ router.get("/response", function (req, res, next) {
   }
 });
 
-router.post("/", (req, res, next) => {
+router.post("/", formControllers.contactForm);
+
+//Nuestro metodo para el envio de datos (funcion async/await)
+
+module.exports = router;
+
+
+{
   //Obtenemos los datos de nuestro body
   const datos = req.body;
 
-  //Vamos a variable para nuestro esquema donde guardara si los datos son validos o no
+  //Vamos a letiable para nuestro esquema donde guardara si los datos son validos o no
   const { error, pass } = schema.validate({
     nombre: datos.nombre,
     telefono: datos.telefono,
@@ -90,25 +99,4 @@ router.post("/", (req, res, next) => {
   } else {
     res.status(400).json({ error: error });
   }
-});
-
-//Nuestro metodo para el envio de datos (funcion async/await)
-async function envioDatos(req) {
-  //en nuestra variable vamos a manejar la promesa
-  let envio = await transporter.sendMail({
-    from: "Datos de aspirante <ucodeitexample@gmail.com>", // sender address
-    to: "ucodeitexample@gmail.com", // list of receivers
-    subject: "Nuevo alumno", // Subject line
-    html: `<b>${req.nombre}</b> 
-    <b>${req.telefono}</b>
-    <b>${req.email}</b>
-    <b>${req.carrera}</b> 
-    <b>${req.semestre}</b>
-    <b>${req.skills}</b>
-    <b>${req.aboutYou}</b>`, // html body
-  });
-  //retornamos la var envio para poder manejar la promesa|
-  return envio;
 }
-
-module.exports = router;

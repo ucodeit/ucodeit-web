@@ -11,9 +11,8 @@
          <div class="container" id="miSection">
             <div class="formulario">
                   <div class="formSpace">
-                     <%- include('./components/res.ejs') %>
                      <div id="alert">
-
+                        <%- include('./components/alert.ejs') %>
                      </div>
                   <h2>Cuentanos acerca de ti</h2>
                   <p>Mandanos mensaje y te responderemos en menos de 72 horas</p>
@@ -67,7 +66,7 @@
                         <textarea class="form-control" name="aboutYou" id="aboutYou" rows="3" minlength="10" required></textarea>
                         </div>
                         
-                        <input type="submit" onclick="return validarDatos();" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
+                        <input type="submit" class="btn btn-primary" id="postForm" value="Enviar" style="width: 100px; margin-left: auto; margin-right: auto;"></input>  
                      </div>
                         
                   </form>
