@@ -18,7 +18,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/index', function(req, res, next) {
-  res.redirect(404, 'dafa')
   res.render('index', { 
     title: 'UCode-It', 
     eventName: 'index', 
